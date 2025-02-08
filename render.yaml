@@ -2,7 +2,7 @@ services:
   - type: web
     name: event-management-backend
     env: node
-    region: india
+    region: singapore
     plan: free
     buildCommand: npm install
     startCommand: npm start
