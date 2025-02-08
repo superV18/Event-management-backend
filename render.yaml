@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: event-management-backend
+    env: node
+    region: india
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000  # Change based on your setup
+      - key: DATABASE_URL
+        sync: false  # Add this manually in Render dashboard
